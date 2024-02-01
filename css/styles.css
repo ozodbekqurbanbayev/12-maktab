@@ -34,15 +34,23 @@ img{
   height: auto;
 
 }
+body{
+
+}
 /* CONTAINER */
 .container{
+
 width: 100%;
 max-width: 1200px;
 padding-left: 50px;
 padding-right: 50px;
 margin-left: auto;
 margin-right: auto;
+
+
+
 }
+
 .dark-mode{
   --wite-color:#000;
   --black-color:#fff;
@@ -218,8 +226,9 @@ margin-top: 50px;
   font-family: var(--font-family);
 }
 .map{
-  width: 800px;
+  width: 1000px;
   height: 500px;
+  margin-top: 50px;
 }
 
 /* MAKTAB FAXRLARI */
