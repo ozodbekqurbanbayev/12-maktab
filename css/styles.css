@@ -1,3 +1,10 @@
+/* CUSTOM PROPS */
+:root{
+  --wite-color:#fff;
+  --black-color:#000;
+  --font-family: monospace;
+  --bg-color:#aaa;
+}
 /* GLOBAL */
 html{
   box-sizing: border-box;
@@ -19,8 +26,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Arial" sans-serif;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--wite-color);
+  color: var(--black-color);
 }
 img{
   max-width: 100%;
@@ -36,7 +43,256 @@ padding-right: 50px;
 margin-left: auto;
 margin-right: auto;
 }
+.dark-mode{
+  --wite-color:#000;
+  --black-color:#fff;
+  --bg-color:#7349fd;
+}
 /* MAIN CONTENT */
 .main-content{
   flex-grow: 1;
 }
+
+/* SITE HEADER */
+.site-header {
+  padding-top: 50px;
+  margin: 0;
+
+}
+.site-header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.site-header-logo-link{
+font-size: 30px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--black-color);
+  font-family: var(--font-family);
+
+}
+.site-header-logo-link:hover{
+  opacity: 0.8;
+}
+.site-header-logo-link:active{
+  opacity: 0.6;
+}
+.dark-mode {
+  padding: 0;
+  margin: 0;
+
+}
+.chiqish-tugmasi{
+  padding: 10px 20px;
+ color: var(--black-color);
+  background-color: greenyellow;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+/* HERO SECTION */
+.hero {
+padding: 0;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.hero-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-info {
+  width: 500px;
+
+}
+.hero-info-heading {
+font-size: 24px;
+line-height: 1.5;
+font-weight: 500;
+  text-transform: uppercase;
+  color: var(--black-color);
+  font-family: var(--font-family);
+  letter-spacing:  1.2px;
+}
+.hero-info-text {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing:  0.5px;
+  color: var(--black-color);
+  font-family: var(--font-family);
+
+}
+.hero-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* CONTENT SECTION */
+.content {
+ margin: 0;
+ padding: 0;
+}
+.content-box {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.content-box-heading {
+  font-size: 24px;
+line-height: 1.5;
+font-weight: 500;
+  text-transform: uppercase;
+  color: var(--black-color);
+  font-family: var(--font-family);
+  letter-spacing:  1.2px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.content-box-list {
+  padding: 0;
+  margin: 0;
+list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.content-box-list-item{
+  width: 600px;
+  text-align: center;
+  padding-left: 50px;
+}
+.content-box-list-item:not(:last-child){
+  margin-bottom: 50px;
+}
+.content-box-list-item-link {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--black-color);
+  font-family: var(--font-family);
+  transition: transform 0.3s ease;
+
+}
+.content-box-list-item-link:hover{
+  transform: scale(1.2);
+}
+.content-box-list-item-link-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.content-box-list-item-link-heading {
+font-size: 20px;
+line-height: 1.5;
+}
+
+/* MAKTAB HAQIDA */
+.maktab-haqida-bolim-one {
+margin-top: 50px;
+}
+.class-img-maktab {
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  padding-left: 150px;
+
+
+}
+.maktab-haqida-bolim-text {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing:  0.5px;
+  color: var(--black-color);
+  font-family: var(--font-family);
+}
+.map{
+  width: 800px;
+  height: 500px;
+}
+
+/* MAKTAB FAXRLARI */
+.maktab-faxrlari {
+margin-top: 50px;
+padding: 0;
+margin: 0;
+}
+.maktab-faxrlari-list {
+padding: 0;
+margin: 0;
+list-style: none;
+margin-top: 50px;
+}
+.five-itemlar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.maktab-faxrlari-list-item {
+width: 250px;
+padding-bottom: 20px;
+
+background-color: var(--bg-color);
+margin-left: -100px;
+}
+.maktab-faxrlari-list-item-link {
+  color: var(--black-color);
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+.maktab-faxrlari-list-item:hover{
+  transform: scale(1.1);
+}
+.maktab-faxrlari-list-item-img {
+  width: 250px;
+  height: 200px;
+}
+.maktab-faxrlari-list-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.div{
+background-image: linear-gradient(
+  to bottom,
+  yellow,
+  pink
+
+);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+border: 25px solid white;
+border-top: 20px solid red;
+border-bottom: 20px solid yellow;
+border-left: 20px pink solid;
+border-right: black solid 20px;
+animation: ani 2.5s linear infinite;
+
+}
+@keyframes ani {
+  to
+  {
+ transform: rotate(360deg);
+  }
+}
+
+
